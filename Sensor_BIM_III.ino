@@ -44,9 +44,9 @@ void ISR_temp(){
 void ISR_detectar_btn(){
   bool estado_btn = digitalRead(button);
   if(estado_btn == 1){
-  Serial.println("boton activo");
+  Serial.println("boton ON");
 }
 if(estado_btn == 0){
-  Serial.println("boton inactivo");
+  Serial.println("boton OFF");
 }
 }
